@@ -13,8 +13,6 @@ This project will check the following in Tectum T12 blockchain:
 - Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/tet_wallets_20250903_1200.csv
 - Total wallets analyzed: 57260
 - Total TET coins: 12227344.00
-- Balance calculation took 2289.33 seconds
-- Total execution time: 2424.93 seconds
 
 
 #### Discussion:
