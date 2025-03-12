@@ -10,6 +10,7 @@ This project will check the following in Tectum T12 blockchain:
 
 #### Results:
 
+- Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/tet_wallets_20250903_1200.csv
 - Total wallets analyzed: 57260
 - Total TET coins: 12227344.00
 - Balance calculation took 2289.33 seconds
@@ -31,7 +32,9 @@ It means we found 1,835,632 TET from 846 wallets where balance does not match su
 
 #### Results:
 
-You can check by yourself by clicking on the blockchain explorer link.
+Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/shady_wallets_filtered.csv
+
+You can check by yourself by clicking on the blockchain explorer link below.
 
 |wallet	|	nb_tx	|	tx_balance	|	wallet_balance	|	balance_diff	|	blockchain_link |
 | ------	|	------	|	------	|	------	|	------	|	------ |
