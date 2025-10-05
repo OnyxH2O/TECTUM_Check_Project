@@ -1,23 +1,36 @@
 # TET_Check_Project
-Project to check issues on Tectum T12 blockchain.
+Project to check/analyze issues on Tectum T12 blockchain.
 
-This project will check the following in Tectum T12 blockchain:
+## Why this project?
+Because do not trust people word, so do not trust me.
+
+But Trust the code which analyze blockchain to show you things/reality.
+
+With all theses informations, you will decide by yourself if this blockchain can be trusted or not.  
+
+
+## Total amount of TET coin
+
+Here, we will check the following in Tectum T12 blockchain:
 - Total amount of TET coin
 - Shady wallets where balance is different from the sum of transactions TET amount
-
  
-## Result of Total amount of TET coin
-
 #### Results:
 
 - Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/tet_wallets_20250903_1200.csv
 - Total wallets analyzed: 57260
 - Total TET coins: 12227344.00
-
+- Date: 2025-09-03
 
 #### Discussion:
 
-We can find over 2,227,344 more TET than the 10M Max supply on the Tectum T12 blockchain 3.0 
+We can find over 2,227,344 more TET than the 10M Max supply on the Tectum T12 blockchain 3.0.
+Big part of this excess is coming from "Shady wallets" (1.836 Million TET).
+
+Update:
+After reaching the team on this issue, Tectum has kinda "fixed" this issue on 2025/03/14 by modifying T12 blockchain 3.0.
+T12 blockchain 3.0 is a centralised blockchain, so tectum team can modify T12 blockchain (by modifying transactions then replay the modified chain of transaction).
+
 
 ## Result of Shady wallets
 
@@ -27,6 +40,17 @@ Sum of shady wallet balance difference: 1835632.6991604 TET
 
 It means we found 1,835,632 TET from 846 wallets where balance does not match sum of transactions.
 
+Update:
+As said up, Tectum team has kinda "fixed" this issue by modifying T12 blockchain 3.0.
+So they can modify TET T12 transactions but not TET ERC20 transactions.
+Therefore we can now found some inconsistent bridge transactions which is recorded in ERC20 but no more in T12.
+
+Transactions have been modified by modifying / adding / deleting in theses shady wallets.
+
+How can I prove theses wallets has been modified?
+- Check links below in waybackmachine (ie [0x3850...9333](https://web.archive.org/web/20250311154236/https://explorer.tectum.io/tectum-t12-tet/address/0x3850700e3056169fc9efd8d1e464fdaec3c69333?page=1&limit=100))
+- Compare it to tectum explorer (ie [0x3850...9333](https://explorer.tectum.io/tectum-t12-tet/address/0x3850700e3056169fc9efd8d1e464fdaec3c69333?page=1&limit=100))
+- If the wallet have interacted with bridge, check wallet address in ERC20 (ie [0x3850...9333](https://etherscan.io/token/0x68a47fe1cf42eba4a030a10cd4d6a1031ca3ca0a?a=0x3850700e3056169fc9efd8d1e464fdaec3c69333))
 
 #### Results:
 
