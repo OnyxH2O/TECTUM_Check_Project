@@ -10,6 +10,7 @@ With all theses informations, you will decide by yourself if this blockchain can
 
 
 ## Total amount of TET coin
+SrcCode: https://github.com/OnyxH2O/TET_Check_Project/blob/main/code_source/AnalyzeAllTetTx.py
 
 Here, we will check the following in Tectum T12 blockchain:
 - Total amount of TET coin
@@ -17,15 +18,18 @@ Here, we will check the following in Tectum T12 blockchain:
  
 #### Results:
 
-- Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/tet_wallets_20250903_1200.csv
+- Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/AnalyzeAllTetTx/tet_wallets_20250903_1200.csv
 - Total wallets analyzed: 57260
 - Total TET coins: 12227344.00
 - Date: 2025-09-03
+- Run in google collab
 
 #### Discussion:
 
 We can find over 2,227,344 more TET than the 10M Max supply on the Tectum T12 blockchain 3.0.
+
 Big part of this excess is coming from "Shady wallets" (1.836 Million TET).
+
 
 Update:
 After reaching the team on this issue, Tectum has kinda "fixed" this issue on 2025/03/14 by modifying T12 blockchain 3.0.
@@ -54,7 +58,7 @@ How can I prove theses wallets has been modified?
 
 #### Results:
 
-Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/shady_wallets_filtered.csv
+Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/AnalyzeAllTetTx/shady_wallets_filtered.csv
 
 You can check by yourself by clicking on the blockchain explorer link below.
 
