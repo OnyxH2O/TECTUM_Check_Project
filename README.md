@@ -6,7 +6,22 @@ Because do not trust people word, so do not trust me.
 
 But Trust the code which analyze blockchain to show you things/reality.
 
-With all theses informations, you will decide by yourself if this blockchain can be trusted or not.  
+With all theses informations, you will decide by yourself if this blockchain can be trusted or not.
+
+## In brief ...
+For now, this shows:
+- [Total amount of TET in excess in T12](https://github.com/OnyxH2O/TET_Check_Project/blob/main/README.md#total-amount-of-tet-in-excess-in-t12):
+   - Before 2025/03/14, T12 blockchain had 2.2M TET in excess over the 10Million TET max supply and many "shady" wallets
+   - Since 2025/03/14, this have been fixed in shady way by deleting/modifying many transactions especially in "shady" wallets
+   - So Team have total control on T12 blockchain and can modify any transaction in order to hide what they want
+        
+- [TET BRIDGE ANALYZER](https://github.com/OnyxH2O/TET_Check_Project/blob/main/README.md#tet-bridge-analyzer) will show you:
+   -  some transactions inconsistency in Bridge (missing transaction in T12, double sent, etc...)
+   -  Team wallets bridged huge amount of TET token from T12 to ERC20 to mainly sent it to Exchange.
+
+- TODO:
+   - Code to bubble maps official team wallets and unofficial team wallets
+   - Code to show that 3.5 Million TPS is just bullshit, and it never happened
 
 ## TET BRIDGE ANALYZER
 - SrcCode: https://github.com/OnyxH2O/TET_Check_Project/blob/main/code_source/tet_bridge_analyzer.ipy
@@ -26,7 +41,17 @@ And what interresting is the top wallets by ERC20 bridge Net (= Received from ER
 - 462,728 TET for 0x1a8d...6c05 ("Tokenomics Development" wallet)
 - ... (check result below)
 
-Just with theses 4 wallets, this already reached more than 5.3 Million TET. 
+Just with theses 4 wallets, this already reached more than 5.3 Million TET.
+
+Reminder from tokenomics, 10 Million TET is the MAX supply with:
+- 500k in seed sale
+- 1.5M in private sale
+- 1M in public sale
+- 2M for Staking/Node
+- 250k for advisor
+Removing all that (5.25M), it remains 4.75M for the team wallets.
+
+Weiird, weiiiird...
 
 #### Results:
 ```
@@ -35,7 +60,7 @@ Just with theses 4 wallets, this already reached more than 5.3 Million TET.
 ├─ ERC20 Net Balance: -8189511.77774356 TET
 ├─ T12 Net Balance: 8152765.97419940 TET
 └─ Combined Diff Net Balance: -36745.80354416 TET
-+164
+
 💡 BRIDGE BALANCE EXPLANATION:
    The diff_net_balance represents the difference between what the T12
    bridge received and what the ERC20 bridge sent to wallets, calculated
