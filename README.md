@@ -25,7 +25,7 @@ For now, this shows:
 
 ## TET BRIDGE ANALYZER
 - SrcCode: https://github.com/OnyxH2O/TET_Check_Project/blob/main/code_source/tet_bridge_analyzer.ipy
-- Run Date: 2025-09-03 (in google collab)
+- Run Date: 2025-10-04 (in google collab)
 
 #### Discussion:
 The result below shows that ERC20 bridge sent 36,745 more TET than T12 bridge received.
@@ -49,7 +49,7 @@ Reminder from tokenomics, 10 Million TET is the MAX supply with:
 - 1M in public sale
 - 2M for Staking/Node
 - 250k for advisor
-Removing all that (5.25M), it remains 4.75M for the team wallets.
+Removing all that (5.25M), it should remain 4.75M for the team wallets.
 
 Weiird, weiiiird...
 
