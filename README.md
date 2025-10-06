@@ -8,8 +8,89 @@ But Trust the code which analyze blockchain to show you things/reality.
 
 With all theses informations, you will decide by yourself if this blockchain can be trusted or not.  
 
+## TET BRIDGE ANALYZER
+- SrcCode: https://github.com/OnyxH2O/TET_Check_Project/blob/main/code_source/tet_bridge_analyzer.ipy
+- Run Date: 2025-09-03 (in google collab)
 
-## Total amount of TET coin
+#### Discussion:
+The result below shows that ERC20 bridge sent 36,745 more TET than T12 bridge received.
+
+Maybe because of some transactions which have disaspeared when they fixed the total amount of TET by deleting/modifying some transaction in T12. (check "Total amount of TET in excess in T12" below)
+
+...
+
+And what interresting is the top wallets by ERC20 bridge Net (= Received from ERC20 bridge - Sent to ERC20 bridge) (mostly to send to exchange):
+- 3,123,413 TET for 0x1fec...9d36 (probably team wallet coz interracting with many known team wallets)
+- 866,550 TET for 0xd1e9...43fe3 ("Tokenomics Marketing Ecosystem and VCs" wallet)
+- 866,216 TET for 0x032d...84aa ("Expense & Payroll Account" wallet)
+- 462,728 TET for 0x1a8d...6c05 ("Tokenomics Development" wallet)
+- ... (check result below)
+
+Just with theses 4 wallets, this already reached more than 5.3 Million TET. 
+
+#### Results:
+```
+🌉 BRIDGE ADDRESS BALANCE ANALYSIS:
+├─ Bridge Address: 0x8f6bc622331f1586cf3ac042efa78b33f72a672d
+├─ ERC20 Net Balance: -8189511.77774356 TET
+├─ T12 Net Balance: 8152765.97419940 TET
+└─ Combined Diff Net Balance: -36745.80354416 TET
++164
+💡 BRIDGE BALANCE EXPLANATION:
+   The diff_net_balance represents the difference between what the T12
+   bridge received and what the ERC20 bridge sent to wallets, calculated
+   from 2023-01-01 onwards, after removing all rollback transactions.
+   A positive value indicates more TET received on T12 than sent from ERC20.
+   A negative value indicates more TET sent from ERC20 than received on T12.
+------------------------------------------------------------
+
+🏆 TOP 10 WALLETS BY ERC20 NET BALANCE (excluding bridge):
+ 1. 0x1fec4273a2ab2cdf260893e7c140b4fadc219d36
+    ├─ ERC20 Net: 3123413.00000000 TET
+    ├─ T12 Net:   -3137214.00000000 TET
+    └─ Diff Net:  -13801.00000000 TET
+ 2. 0xd1e976025829fa492799e14c68419972e1743fe3
+    ├─ ERC20 Net: 866550.00000000 TET
+    ├─ T12 Net:   -1049224.06815880 TET
+    └─ Diff Net:  -182674.06815880 TET
+ 3. 0x032d31cb46f7fe34017fc8e60839393e01d484aa
+    ├─ ERC20 Net: 866216.91793500 TET
+    ├─ T12 Net:   -862216.91793500 TET
+    └─ Diff Net:    4000.00000000 TET
+ 4. 0x1a8d4fe88ccf87d7a21abdb282da764bb52a6c05
+    ├─ ERC20 Net: 462728.41968388 TET
+    ├─ T12 Net:   -462728.41968388 TET
+    └─ Diff Net:       0.00000000 TET
+ 5. 0x371565d1078848d127a40d061fe6e43b2e9d8db4
+    ├─ ERC20 Net: 206000.00000000 TET
+    ├─ T12 Net:        0.00000000 TET
+    └─ Diff Net:  206000.00000000 TET
+ 6. 0xc193c5e4b70160a90795225e5720dbae0340e5e7
+    ├─ ERC20 Net: 178509.52365882 TET
+    ├─ T12 Net:   -228169.52365882 TET
+    └─ Diff Net:  -49660.00000000 TET
+ 7. 0x50deb045a6897593831b6eeb7d581fd4d3457929
+    ├─ ERC20 Net: 164500.00000000 TET
+    ├─ T12 Net:   -164590.90000000 TET
+    └─ Diff Net:     -90.90000000 TET
+ 8. 0x1712970f9e033deccbf97adacef230bdacfb64e7
+    ├─ ERC20 Net:  91690.09619748 TET
+    ├─ T12 Net:   -113446.09619746 TET
+    └─ Diff Net:  -21755.99999998 TET
+ 9. 0x5c2b5e55b664acffb59f9e71dad2a8c79807f1c6
+    ├─ ERC20 Net:  89500.00000000 TET
+    ├─ T12 Net:   -189500.00000000 TET
+    └─ Diff Net:  -100000.00000000 TET
+10. 0xa7aa8d0dba60e8cab5b8c2733d3eb7d8b24cc465
+    ├─ ERC20 Net:  69036.14248514 TET
+    ├─ T12 Net:   -68036.14248514 TET
+    └─ Diff Net:    1000.00000000 TET
+```
+
+- Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/tet_bridge_analyzer/tet_wallet_bridge_balances.csv
+- Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/tet_bridge_analyzer/tet_inconsistent_transactions.csv
+
+## Total amount of TET in excess in T12
 SrcCode: https://github.com/OnyxH2O/TET_Check_Project/blob/main/code_source/AnalyzeAllTetTx.py
 
 Here, we will check the following in Tectum T12 blockchain:
@@ -21,7 +102,7 @@ Here, we will check the following in Tectum T12 blockchain:
 - Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/AnalyzeAllTetTx/tet_wallets_20250903_1200.csv
 - Total wallets analyzed: 57260
 - Total TET coins: 12227344.00
-- Date: 2025-09-03
+- Date: 2025-03-09
 - Run in google collab
 
 #### Discussion:
