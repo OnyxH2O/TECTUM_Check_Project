@@ -1,28 +1,42 @@
-# TET_Check_Project
-Project to check/analyze issues on Tectum T12 blockchain.
+# TECTUM CHECKING PROJECT
+A project to check/analyze issues on Tectum blockchain (TET T12 and TET ERC20).
 
 ## Why this project?
-Because do not trust people word, so do not trust me.
+Because in blockchain, you do not prove things with words.\
+But, you prove it with the Trust of code.\
+So people won't able to say this is based on BS.
 
-But Trust the code which analyze blockchain to show you things/reality.
+It will analyze blockchain to show some hidden truth of this project.
 
-With all theses informations, you will decide by yourself if this blockchain can be trusted or not.
+Then, you will decide by yourself if this blockchain can be trusted or not.
 
-## In brief ...
-For now, this shows:
+## In short ...
+
+For now, analysis shows:
+
 - [Total amount of TET in excess in T12](https://github.com/OnyxH2O/TET_Check_Project/blob/main/README.md#total-amount-of-tet-in-excess-in-t12):
-   - Before 2025/03/14, T12 blockchain had 2.2M TET in excess over the 10Million TET max supply and many "shady" wallets
-   - Since 2025/03/14, this have been fixed in shady way by deleting/modifying many transactions especially in "shady" wallets
-   - So Team have total control on T12 blockchain and can modify any transaction in order to hide what they want
-        
+   - Before 2025/03/14, T12 blockchain had 2.2M TET in excess over the 10Million TET max supply mainly through many "shady" wallets under tectum team ownership (proof: csv file)
+   - Since 2025/03/14, this have been fixed in shady way by deleting/modifying many transactions especially in "shady" wallets (proof: wallet archive in waybackmachine)
+  
+  This shows how dangerous is a centralised blockhain like T12 in the hand of Tectum Team who can modify/delete any transaction as they want.
+         
 - [TET BRIDGE ANALYZER](https://github.com/OnyxH2O/TET_Check_Project/blob/main/README.md#tet-bridge-analyzer) will show you:
-   -  some transactions inconsistency in Bridge (missing transaction in T12, double sent, etc...)
-   -  Team wallets bridged huge amount of TET token from T12 to ERC20 to mainly sent it to Exchange.
+   -  There is many transactions in ERC20 Bridge which does not match any tx in T12 Bridge (missing transaction in T12, double sent, etc...) (proof: csv file)
+   -  All Team wallets bridge overall around 5.3M TET from T12 to ERC20 in order to mainly sent TET to Exchanges  (proof: csv file)
+  
+  This shows T12 blockchain have some inconsistencies against ERC20 bridge tx (probably due to modification/deletion of transactions)\
+  and, about the 5.3M TET tectum team bridge to ERC20 (removing all TET sent back to the bridge), well ... it seems this is more than what has been allocated to the team up to Tectum tokenomic plan.
 
-- TODO:
-   - Code to bubble maps official team wallets and unofficial team wallets
-   - Code to show that 3.5 Million TPS is just bullshit, and it never happened
-
+- TPS
+   - T12 3.0 :
+      - Live vdo of 3.5M tps on YT cannot be trusted, it is just a fancy webapp. They never let me anybody access to the testnode to check if transactions were real.
+      - There is no API for user to do their own speedtest
+        
+   - T12 4.0 :
+      - 17820 tx of 0.00000001
+      - Start from 2025-03-17 07:49:16:900 to 2025-03-17 08:50:51:261
+      - It's around 5 tps! lol
+     
 ## TET BRIDGE ANALYZER
 - SrcCode: https://github.com/OnyxH2O/TET_Check_Project/blob/main/code_source/tet_bridge_analyzer.ipy
 - Run Date: 2025-10-04 (in google collab)
