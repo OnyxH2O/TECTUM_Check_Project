@@ -33,39 +33,44 @@ For now, analysis shows:
       - There is no API for user to do their own speedtest
         
    - T12 4.0 :
+      - Source: Tectum T12 4.0 blockchain explorer 
       - 17820 tx of 0.00000001
       - Start from 2025-03-17 07:49:16:900 to 2025-03-17 08:50:51:261
-      - It's around 5 tps! lol
+      - So it's around 5 tps here! LoL (17820 /60 /60 = 4.95)
      
 ## TET BRIDGE ANALYZER
-- SrcCode: https://github.com/OnyxH2O/TET_Check_Project/blob/main/code_source/tet_bridge_analyzer.ipy
-- Run Date: 2025-10-04 (in google collab)
+- Source Code: https://github.com/OnyxH2O/TET_Check_Project/blob/main/code_source/tet_bridge_analyzer.ipy
+- Run on 2025-10-04 in google collab
 
 #### Discussion:
-The result below shows that ERC20 bridge sent 36,745 more TET than T12 bridge received.
+The result below shows that ERC20 bridge sent 36,745 more TET than T12 bridge received.\
+because of bridge inconsistencies between ERC20 bridge and T12 bridge probably due to transactions deletion/modification in T12.\
+(check "Total amount of TET in excess in T12" in result)
 
-Maybe because of some transactions which have disaspeared when they fixed the total amount of TET by deleting/modifying some transaction in T12. (check "Total amount of TET in excess in T12" below)
+Proof: Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/tet_bridge_analyzer/tet_inconsistent_transactions.csv
 
-...
-
-And what interresting is the top wallets by ERC20 bridge Net (= Received from ERC20 bridge - Sent to ERC20 bridge) (mostly to send to exchange):
-- 3,123,413 TET for 0x1fec...9d36 (probably team wallet coz interracting with many known team wallets)
+And what interresting is the top wallets by ERC20 bridge Net (= TET received from ERC20 bridge - TET Sent to ERC20 bridge):
+- 3,123,413 TET for 0x1fec...9d36 (an unofficial team wallet)
 - 866,550 TET for 0xd1e9...43fe3 ("Tokenomics Marketing Ecosystem and VCs" wallet)
 - 866,216 TET for 0x032d...84aa ("Expense & Payroll Account" wallet)
 - 462,728 TET for 0x1a8d...6c05 ("Tokenomics Development" wallet)
 - ... (check result below)
 
-Just with theses 4 wallets, this already reached more than 5.3 Million TET.
+Proof: Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/tet_bridge_analyzer/tet_wallet_bridge_balances.csv
 
-Reminder from tokenomics, 10 Million TET is the MAX supply with:
+Tectum have much more official and unofficial wallets \
+but just with theses 4 wallets, it already reached more than 5.3 Million TET which has been sent to exchanges.
+
+Reminder from Tectum tokenomic of the 10 Million TET MAX supply:
 - 500k in seed sale
 - 1.5M in private sale
 - 1M in public sale
 - 2M for Staking/Node
 - 250k for advisor
-Removing all that (5.25M), it should remain 4.75M for the team wallets.
+- Total = 5.25M
+So Removing all that from 10M, it should remain around 4.75M for all the team wallets.
 
-Weiird, weiiiird...
+Weiird, weiiiird... it smells pretty fishy here.
 
 #### Results:
 ```
@@ -130,30 +135,27 @@ Weiird, weiiiird...
 - Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/tet_bridge_analyzer/tet_inconsistent_transactions.csv
 
 ## Total amount of TET in excess in T12
-SrcCode: https://github.com/OnyxH2O/TET_Check_Project/blob/main/code_source/AnalyzeAllTetTx.py
-
+- Source Code: https://github.com/OnyxH2O/TET_Check_Project/blob/main/code_source/AnalyzeAllTetTx.py
+- Run on 2025-03-09 in google collab
+ 
 Here, we will check the following in Tectum T12 blockchain:
 - Total amount of TET coin
 - Shady wallets where balance is different from the sum of transactions TET amount
  
 #### Results:
-
-- Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/AnalyzeAllTetTx/tet_wallets_20250903_1200.csv
 - Total wallets analyzed: 57260
 - Total TET coins: 12227344.00
-- Date: 2025-03-09
-- Run in google collab
+- Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/AnalyzeAllTetTx/tet_wallets_20250903_1200.csv
+
 
 #### Discussion:
 
-We can find over 2,227,344 more TET than the 10M Max supply on the Tectum T12 blockchain 3.0.
+We can find over 2,227,344 more TET than the 10M Max supply on the Tectum T12 blockchain 3.0.\
+Big part of this excess is coming from "Shady wallets" which all are under Tectum team ownership (1.836 Million TET).
 
-Big part of this excess is coming from "Shady wallets" (1.836 Million TET).
-
-
-Update:
+Update 2025/03/14:
 After reaching the team on this issue, Tectum has kinda "fixed" this issue on 2025/03/14 by modifying T12 blockchain 3.0.
-T12 blockchain 3.0 is a centralised blockchain, so tectum team can modify T12 blockchain (by modifying transactions then replay the modified chain of transaction).
+T12 blockchain 3.0 is a centralised blockchain, so tectum team can modify T12 blockchain as they pleased (by modifying transactions then replay the modified chain of transaction).
 
 
 ## Result of Shady wallets
@@ -165,22 +167,20 @@ Sum of shady wallet balance difference: 1835632.6991604 TET
 It means we found 1,835,632 TET from 846 wallets where balance does not match sum of transactions.
 
 Update:
-As said up, Tectum team has kinda "fixed" this issue by modifying T12 blockchain 3.0.
-So they can modify TET T12 transactions but not TET ERC20 transactions.
+As said before, Tectum team has kinda "fixed" this issue by modifying T12 blockchain 3.0.\
+They can modify TET T12 transactions but not TET ERC20 transactions.\
 Therefore we can now found some inconsistent bridge transactions which is recorded in ERC20 but no more in T12.
 
 Transactions have been modified by modifying / adding / deleting in theses shady wallets.
 
-How can I prove theses wallets has been modified?
-- Check links below in waybackmachine (ie [0x3850...9333](https://web.archive.org/web/20250311154236/https://explorer.tectum.io/tectum-t12-tet/address/0x3850700e3056169fc9efd8d1e464fdaec3c69333?page=1&limit=100))
-- Compare it to tectum explorer (ie [0x3850...9333](https://explorer.tectum.io/tectum-t12-tet/address/0x3850700e3056169fc9efd8d1e464fdaec3c69333?page=1&limit=100))
+How can I prove theses wallets transactions have been modified? Well thanks to some wallet archive in waybackmachine:
+- Check wallet in waybackmachine (ie [0x3850...9333](https://web.archive.org/web/20250311154236/https://explorer.tectum.io/tectum-t12-tet/address/0x3850700e3056169fc9efd8d1e464fdaec3c69333?page=1&limit=100))
+- Compare this wallet with tectum explorer (ie [0x3850...9333](https://explorer.tectum.io/tectum-t12-tet/address/0x3850700e3056169fc9efd8d1e464fdaec3c69333?page=1&limit=100))
 - If the wallet have interacted with bridge, check wallet address in ERC20 (ie [0x3850...9333](https://etherscan.io/token/0x68a47fe1cf42eba4a030a10cd4d6a1031ca3ca0a?a=0x3850700e3056169fc9efd8d1e464fdaec3c69333))
 
 #### Results:
 
 Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/AnalyzeAllTetTx/shady_wallets_filtered.csv
-
-You can check by yourself by clicking on the blockchain explorer link below.
 
 |wallet	|	nb_tx	|	tx_balance	|	wallet_balance	|	balance_diff	|	blockchain_link |
 | ------	|	------	|	------	|	------	|	------	|	------ |
