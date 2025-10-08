@@ -29,7 +29,7 @@ For now, analysis shows:
 
 - TPS
    - T12 3.0 :
-      - Live vdo of 3.5M tps on YT cannot be trusted, it is just a fancy webapp. They never let me anybody access to the testnode to check if transactions were real.
+      - Live vdo of 3.5M tps on YT cannot be trusted, it is just a live fancy webapp doing fancy graphical stuff. They never let me (or anybody alse) access the testnode in order to check if transactions were real.
       - There is no API for user to do their own speedtest
         
    - T12 4.0 :
