@@ -15,14 +15,14 @@ Then, you will decide by yourself if this blockchain can be trusted or not.
 For now, analysis shows:
 
 - [Total amount of TET in excess in T12](https://github.com/OnyxH2O/TET_Check_Project/blob/main/README.md#total-amount-of-tet-in-excess-in-t12):
-   - Before 2025/03/14, T12 blockchain had 2.2M TET in excess over the 10Million TET max supply mainly through many "shady" wallets under tectum team ownership (proof: csv file)
+   - Before 2025/03/14, T12 blockchain had 2.2M TET in excess over the 10Million TET max supply mainly through many "shady" wallets under tectum team ownership (proof: csv file below)
    - Since 2025/03/14, this have been fixed in shady way by deleting/modifying many transactions especially in "shady" wallets (proof: wallet archive in waybackmachine)
   
   This shows how dangerous is a centralised blockhain like T12 in the hand of Tectum Team who can modify/delete any transaction as they want.
          
 - [TET BRIDGE ANALYZER](https://github.com/OnyxH2O/TET_Check_Project/blob/main/README.md#tet-bridge-analyzer) will show you:
-   -  There is many transactions in ERC20 Bridge which does not match any tx in T12 Bridge (missing transaction in T12, double sent, etc...) (proof: csv file)
-   -  All Team wallets bridge overall around 5.3M TET from T12 to ERC20 in order to mainly sent TET to Exchanges  (proof: csv file)
+   -  There is many transactions in ERC20 Bridge which does not match any tx in T12 Bridge (missing transaction in T12, double sent, etc...) (proof: csv file below)
+   -  All Team wallets bridge overall around 5.3M TET from T12 to ERC20 in order to mainly sent TET to Exchanges  (proof: csv file below)
   
   This shows T12 blockchain have some inconsistencies against ERC20 bridge tx (probably due to modification/deletion of transactions)\
   and, about the 5.3M TET tectum team bridge to ERC20 (removing all TET sent back to the bridge), well ... it seems this is more than what has been allocated to the team up to Tectum tokenomic plan.
