@@ -27,7 +27,16 @@ For now, analysis shows:
   This shows T12 blockchain have some inconsistencies against ERC20 bridge tx (probably due to modification/deletion of transactions)\
   and, about the 5.3M TET tectum team bridge to ERC20 (removing all TET sent back to the bridge), well ... it seems this is more than what has been allocated to the team up to Tectum tokenomic plan.
 
-- TPS
+- TCT - New cash cow
+   - After almost sending all team's TET to "Bridge -> Exchanges" (currently around 5.3M TET)
+   - We currently found 8,310,502 TET (of the 10M TET max supply) which are in ERC20 side
+   - So how to move back some TET to T12 AND how to get more TET to sell ... here come TCT!!!
+   - To buy TCT (with 10% discount), You need to bridge back your TET to T12 and buy from soft wallet
+   - So great! Team get some TET back and bridge it back to ERC20 in order to sent it to Exchange!
+   - Proof: ![TCT Proof](https://github.com/OnyxH2O/TECTUM_Check_Project/blob/main/img/TET_TCT_to_Bridge.png) 
+
+     
+- Speedtest - TPS
    - T12 3.0 :
       - Live vdo of 3.5M tps on YT cannot be trusted, it is just a live fancy webapp doing fancy graphical stuff. They never let me (or anybody alse) access the testnode in order to check if transactions were real.
       - There is no API for user to do their own speedtest
@@ -37,7 +46,8 @@ For now, analysis shows:
       - 17820 tx of 0.00000001
       - Start from 2025-03-17 07:49:16:900 to 2025-03-17 08:50:51:261
       - So it's around 5 tps here! LoL (17820 /60 /60 = 4.95)
-     
+
+
 ## TET BRIDGE ANALYZER
 - Source Code: https://github.com/OnyxH2O/TET_Check_Project/blob/main/code_source/tet_bridge_analyzer.ipy
 - Run on 2025-10-04 in google collab
@@ -56,7 +66,11 @@ And what interresting is the top wallets by ERC20 bridge Net (= TET received fro
 - 462,728 TET for 0x1a8d...6c05 ("Tokenomics Development" wallet)
 - ... (check result below)
 
-Proof: Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/tet_bridge_analyzer/tet_wallet_bridge_balances.csv
+Proof:
+- Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/tet_bridge_analyzer/tet_wallet_bridge_balances.csv
+- url: https://www.blockchain.com/explorer/addresses/eth/0x1fec4273a2ab2cdf260893e7c140b4fadc219d36
+![0x1fec...9d36](img/TetTeamWallet_32M_TET_.PNG)
+
 
 Tectum have much more official and unofficial wallets \
 but just with theses 4 wallets, it already reached more than 5.3 Million TET which has been sent to exchanges.
@@ -177,6 +191,10 @@ How can I prove theses wallets transactions have been modified? Well thanks to s
 - Check wallet in waybackmachine (ie [0x3850...9333](https://web.archive.org/web/20250311154236/https://explorer.tectum.io/tectum-t12-tet/address/0x3850700e3056169fc9efd8d1e464fdaec3c69333?page=1&limit=100))
 - Compare this wallet with tectum explorer (ie [0x3850...9333](https://explorer.tectum.io/tectum-t12-tet/address/0x3850700e3056169fc9efd8d1e464fdaec3c69333?page=1&limit=100))
 - If the wallet have interacted with bridge, check wallet address in ERC20 (ie [0x3850...9333](https://etherscan.io/token/0x68a47fe1cf42eba4a030a10cd4d6a1031ca3ca0a?a=0x3850700e3056169fc9efd8d1e464fdaec3c69333))
+
+![0x3850700e3056169fc9efd8d1e464fdaec3c69333](img/TET_meme_T12Mod.png)
+
+![0x3850700e3056169fc9efd8d1e464fdaec3c69333](img/TET_WhereIs_820TET.png)
 
 #### Results:
 
