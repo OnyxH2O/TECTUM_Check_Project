@@ -192,9 +192,14 @@ How can I prove theses wallets transactions have been modified? Well thanks to s
 - Compare this wallet with tectum explorer (ie [0x3850...9333](https://explorer.tectum.io/tectum-t12-tet/address/0x3850700e3056169fc9efd8d1e464fdaec3c69333?page=1&limit=100))
 - If the wallet have interacted with bridge, check wallet address in ERC20 (ie [0x3850...9333](https://etherscan.io/token/0x68a47fe1cf42eba4a030a10cd4d6a1031ca3ca0a?a=0x3850700e3056169fc9efd8d1e464fdaec3c69333))
 
+Blockchain manipulation proof 1:
 ![0x3850700e3056169fc9efd8d1e464fdaec3c69333](img/TET_meme_T12Mod.png)
 
+Blockchain manipulation proof 2:
 ![0x3850700e3056169fc9efd8d1e464fdaec3c69333](img/TET_WhereIs_820TET.png)
+
+Blockchain manipulation proof 3:
+![Blckch manipulation proof3](img/TET_Bridge_DifferentHashes.png)
 
 #### Results:
 
