@@ -156,6 +156,58 @@ Weiird, weiiiird... it smells pretty fishy here.
 - Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/tet_bridge_analyzer/tet_wallet_bridge_balances.csv
 - Csv file: https://github.com/OnyxH2O/TET_Check_Project/blob/main/result_files/tet_bridge_analyzer/tet_inconsistent_transactions.csv
 
+
+#### additional results:
+The following report agregate by month the ERC20 Net (= TET get from bridge - TET send to Bridge) of the top 20 wallet (excluding the bridge).
+And then try to convert to USD price average from the concerned month.
+(Note: top 20 wallets are all Tectum team wallets which have a ERC20 net over 25kTET)
+
+```
+📅 AGGREGATED MONTHLY REPORT FOR TOP 20 WALLETS (ERC20 ONLY):
+================================================================================
+Month        |  TET Price |      Total ERC20 Net |      Total ERC20 USD
+--------------------------------------------------------------------------------
+2023-08      | $   6.2500 |       55396.00000000 | $          346225.00
+2023-09      | $   7.8000 |      124175.82469999 | $          968571.43
+2023-10      | $   9.4500 |      207958.97790000 | $         1965212.34
+2023-11      | $  15.2000 |      294516.15790000 | $         4476645.60
+2023-12      | $  29.9500 |      154986.57790000 | $         4641848.01
+2024-01      | $  42.1500 |      191022.88465980 | $         8051614.59
+2024-02      | $  29.7800 |      149149.75991211 | $         4441679.85
+2024-03      | $  42.3500 |      163503.09398945 | $         6924356.03
+2024-04      | $  33.9900 |      126982.50213028 | $         4316135.25
+2024-05      | $  14.5200 |      264934.07665488 | $         3846842.79
+2024-06      | $   9.6000 |      138407.77678044 | $         1328714.66
+2024-07      | $   6.8100 |      204057.76033900 | $         1389633.35
+2024-08      | $   7.1400 |      207478.00000000 | $         1481392.92
+2024-09      | $   9.3800 |      203865.28222287 | $         1912256.35
+2024-10      | $   9.4600 |       55535.00000000 | $          525361.10
+2024-11      | $   9.1300 |      267049.98648514 | $         2438166.38
+2024-12      | $   7.8600 |      157981.00000000 | $         1241730.66
+2025-01      | $   4.7000 |      101967.45497346 | $          479247.04
+2025-02      | $   2.6700 |      223478.41968388 | $          596687.38
+2025-03      | $   1.5000 |      464550.00000000 | $          696825.00
+2025-04      | $   1.3300 |      454490.00000000 | $          604471.70
+2025-05      | $   1.2100 |      415813.00000000 | $          503133.73
+2025-06      | $   0.7100 |      494480.52365882 | $          351081.17
+2025-07      | $   0.7300 |      756755.00000000 | $          552431.15
+2025-08      | $   1.0500 |      347798.46300000 | $          365188.39
+2025-09      | $   0.8500 |      101050.00000000 | $           85892.50
+2025-10      | $   0.9000 |      208235.00000000 | $          187411.50
+2025-11      | $   0.6500 |       42475.03131705 | $           27608.77
+================================================================================
+CUMULATIVE   |    (Flows) |     6578093.55420717 | $        54746364.63
+--------------------------------------------------------------------------------
+ℹ️  Current Valuation of Stack (using last price $0.6500):
+    $4,275,760.81
+============================================================
+```
+
+- So here we can see, TECTUM team have sent more than 6.5MTET from bridge to wallet ... and then mostly to Exchange.
+- If we considered, they have sold theses TET during the current month, so the total cash out maybe around 54M USD !
+
+
+
 ## Total amount of TET in excess in T12
 - Source Code: https://github.com/OnyxH2O/TET_Check_Project/blob/main/code_source/AnalyzeAllTetTx.py
 - Run on 2025-03-09 in google collab
