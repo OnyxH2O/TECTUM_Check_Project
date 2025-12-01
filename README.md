@@ -38,7 +38,9 @@ For now, analysis shows:
      
 - Speedtest - TPS
    - T12 3.0 :
-      - Live vdo of 3.5M tps on YT cannot be trusted, it is just a live fancy webapp doing fancy graphical stuff. They never let me (or anybody alse) access the testnode in order to check if transactions were real.
+      - https://www.youtube.com/watch?v=RZNxpaESVKY
+      - Live vdo of 3.5M tps on YT cannot be trusted, it is just a live fancy webapp doing fancy graphical stuff and faking transactions.
+      - They never let me (or anybody else) to access the testnode in order to check if transactions were real.
       - There is no API for user to do their own speedtest
         
    - T12 4.0 :
@@ -47,6 +49,12 @@ For now, analysis shows:
       - Start from 2025-03-17 07:49:16:900 to 2025-03-17 08:50:51:261
       - So it's around 5 tps here! LoL (17820 /60 /60 = 4.95)
 
+   - T12 4.1 :
+      - Source: Tectum T12 4.1 blockchain explorer 
+      - 34757 tx of 0.00000001 TEC
+      - Start from : 2025-03-09 21:30:23 at Block 1000
+      - End at     : 2025-03-09 21:40:23 at block 35757 
+      - So it's around 58 tps here! LoL (34757 /10 /60 = 57.93)
 
 ## TET BRIDGE ANALYZER
 - Source Code: https://github.com/OnyxH2O/TET_Check_Project/blob/main/code_source/tet_bridge_analyzer.ipy
