@@ -35,10 +35,12 @@ For now, analysis shows:
    - So great! Team get some TET back and bridge it back to ERC20 in order to sent it to Exchange!
    - Proof: ![TCT Proof](https://github.com/OnyxH2O/TECTUM_Check_Project/blob/main/img/TET_TCT_to_Bridge.png) 
 
-     
-- Speedtest - TPS
+- [T12 3.0 Blockchain manipulation](https://github.com/OnyxH2O/TET_Check_Project/blob/main/README.md#blockchain-manipulation-proof)
+   - Several proof of the T12 3.0 blockchain manipulation to get more TET !
+
+- Tectum blockchain Speedtest - TPS
    - T12 3.0 :
-      - https://www.youtube.com/watch?v=RZNxpaESVKY
+      - Fake tps vdo: https://www.youtube.com/watch?v=RZNxpaESVKY
       - Live vdo of 3.5M tps on YT cannot be trusted, it is just a live fancy webapp doing fancy graphical stuff and faking transactions.
       - They never let me (or anybody else) to access the testnode in order to check if transactions were real.
       - There is no API for user to do their own speedtest
@@ -252,14 +254,22 @@ How can I prove theses wallets transactions have been modified? Well thanks to s
 - Compare this wallet with tectum explorer (ie [0x3850...9333](https://explorer.tectum.io/tectum-t12-tet/address/0x3850700e3056169fc9efd8d1e464fdaec3c69333?page=1&limit=100))
 - If the wallet have interacted with bridge, check wallet address in ERC20 (ie [0x3850...9333](https://etherscan.io/token/0x68a47fe1cf42eba4a030a10cd4d6a1031ca3ca0a?a=0x3850700e3056169fc9efd8d1e464fdaec3c69333))
 
-Blockchain manipulation proof 1:
+### Blockchain manipulation proof
+
+- Blockchain manipulation proof 1: Delete transaction and add new ones
 ![0x3850700e3056169fc9efd8d1e464fdaec3c69333](img/TET_meme_T12Mod.png)
 
-Blockchain manipulation proof 2:
+
+- Blockchain manipulation proof 2: Transaction appeared in ERC20 bridge but not on T12 because it has been removed
 ![0x3850700e3056169fc9efd8d1e464fdaec3c69333](img/TET_WhereIs_820TET.png)
 
-Blockchain manipulation proof 3:
+
+- Blockchain manipulation proof 3: Diffrent hashes for the same transactions mean modified blockchain !
 ![Blckch manipulation proof3](img/TET_Bridge_DifferentHashes.png)
+
+
+- Blockchain manipulation proof 4: (Update 2025/12/01) Duplicate transaction bug and new transaction (for thousand of wallets)
+![Blckch manipulation proof4](img/TetTeamWallet69333_ShadyWallet_20251201_.PNG)
 
 #### Results:
 
